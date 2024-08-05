@@ -85,7 +85,7 @@ class Loss():
             input = input.unsqueeze(0)
 
         # Find the labeled samples and compute the loss only on them
-        l = self.loss(input[mask], input[mask])
+        l = self.loss(input[mask], target[mask])
 
         return l
 
